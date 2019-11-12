@@ -1,0 +1,14 @@
+phrase = input("Type in  :  ")
+phrase_splited = phrase.split(' ')
+
+# to remove duplicated
+
+word_list = []
+for i in phrase_splited:
+    if i not in word_list:
+        word_list.append(i)
+    else:
+        continue
+        
+word_list.sort()
+print((' ').join(word_list))
